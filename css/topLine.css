@@ -1,0 +1,67 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#topLine {
+  background-color: rgb(93, 105, 69);
+  height: 48px;
+  display: flex;
+}
+#topLine button {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#topLine button {
+  flex: 1;
+  color: white;
+}
+#topLine button:nth-child(2) {
+  font-size: 15px;
+  font-weight: 900;
+  color: white;
+  flex: 1.5;
+}
+#topLine span {
+  flex: 30;
+}
+
+#topLine button:hover {
+  background-color: rgb(49, 54, 7);
+}
+
+#searchSpan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons .fas,
+.icons .far {
+  color: white;
+}
+#searchInput {
+  background-color: #b4ca88;
+  border-radius: 0px 3px 3px 0px;
+  height: 30px;
+  width: 400px;
+  border: none;
+}
+#searchInput:focus {
+  border: none;
+}
+
+.fa-search {
+  color: rgb(49, 54, 7);
+  background-color: #b4ca88;
+  height: 22px;
+  border-radius: 3px 0px 0px 3px;
+  padding: 10px 10px 0px 5px;
+}

@@ -1,0 +1,87 @@
+#bottomLine {
+  display: flex;
+  flex: 1;
+}
+
+#sideBanner {
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
+
+#sideBanner button {
+  flex: 1;
+}
+#sideBanner span:nth-child(8) {
+  flex: 10;
+}
+
+#todoList {
+  flex: 1;
+}
+
+.sideIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sideIcons:hover {
+  background-color: rgb(93, 105, 69);
+}
+.sideIcons .fas,
+.sideIcons .far {
+  color: black;
+}
+
+#todoList {
+  display: flex;
+  flex-direction: column;
+}
+#todoTitle {
+  display: flex;
+  flex: 1;
+}
+#todoContent {
+  flex: 15;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-ellipsis-h {
+  color: rgb(93, 105, 69);
+  margin-top: 13px;
+}
+.fa-ellipsis-h:hover {
+  background-color: gainsboro;
+}
+
+.fa-plus {
+  margin: 15px;
+}
+h3 {
+  color: rgb(93, 105, 69);
+  margin: 20px 20px 0px 20px;
+}
+
+.todos {
+  height: 50px;
+  border-bottom: solid 1px rgb(93, 105, 69);
+  width: 98%;
+  display: flex;
+  align-items: center;
+}
+
+.todos input {
+  width: 98%;
+  height: 80%;
+  font-size: 15px;
+  border: none;
+}
+button {
+  background: none;
+  cursor: pointer;
+  border: none;
+}

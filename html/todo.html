@@ -4,19 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/topLine.css">
+    <link rel="stylesheet" href="../css/bottonLine.css">
     <script src="https://kit.fontawesome.com/d50f80293d.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <div id="topLine">
-        <span class="icons"><i class="fas fa-bars fa-lg"></i></span>
-        <span>TO DO</span>
-        <span><input id ="search"></span>
-        <span class="icons"><i class="fas fa-cog fa-lg"></i></span>
-        <span class="icons"><i class="fas fa-question fa-lg"></i></span>
-        <span class="icons"><i class="fas fa-bullhorn fa-lg"></i></span>
-        <span class="icons"><i class="far fa-user fa-lg"></i></span>
+    <div id = "container">
+        <div id="topLine">
+            <button><i class="fas fa-bars fa-lg"></i></button>
+            <button>TO DO</button>
+            <span id ="searchSpan">
+                <i class="fas fa-search fa-lg"></i>
+                <input id ="searchInput">
+            </span>
+            <button><i class="fas fa-cog fa-lg"></i></button>
+            <button><i class="fas fa-question fa-lg"></i></button>
+            <button><i class="fas fa-bullhorn fa-lg"></i></button>
+            <button><i class="far fa-user fa-lg"></i></button>
+        </div>
+        <div id="bottomLine">
+            <div id ="sideBanner">
+                <button class = "sideIcons" style="padding-top: 10px;"><i class="fas fa-chevron-right fa-lg"></i></button>
+                <button class = "sideIcons"><i class="far fa-sun fa-lg"></i></button>
+                <button class = "sideIcons"><i class="far fa-star fa-lg"></i></button>
+                <button class = "sideIcons"><i class="far fa-calendar fa-lg"></i></button>
+                <button class = "sideIcons"><i class="far fa-user fa-lg"></i></button>
+                <button class = "sideIcons"><i class="fas fa-home fa-lg"></i></button>
+                <button class = "sideIcons"><i class="fas fa-plus fa-lg"></i></button>
+                <span></span>
+                <button class = "sideIcons"><i class="far fa-envelope fa-lg"></i></button>
+                <button class = "sideIcons"><i class="far fa-calendar fa-lg"></i></button>
+                <button class = "sideIcons"><i class="fas fa-users fa-lg"></i></button>
+                <button class = "sideIcons"><i class="fas fa-paperclip fa-lg"></i></button>
+                <button class = "sideIcons"><i class="far fa-check-square fa-lg"></i></button>
+            </div>
+            <div id ="todoList">
+                <div id="todoTitle">
+                    <h3>중요</h3><button><i class="fas fa-ellipsis-h"></i></button>
+                </div>
+                <div id="todoContent">
+                    <div class="todos"><button><i class="fas fa-plus"></i></button><input type="text" placeholder="작업 추가"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                    <div class="todos"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
