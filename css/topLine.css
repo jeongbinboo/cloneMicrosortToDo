@@ -11,7 +11,6 @@ body {
 }
 #topLine {
   background-color: rgb(93, 105, 69);
-  height: 48px;
   display: flex;
 }
 #topLine button {
@@ -42,6 +41,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 55px;
 }
 .icons .fas,
 .icons .far {

@@ -39,8 +39,8 @@
   flex-direction: column;
 }
 #todoTitle {
-  display: flex;
   flex: 1;
+  display: flex;
 }
 #todoContent {
   flex: 15;
@@ -49,7 +49,10 @@
   justify-content: center;
   align-items: center;
 }
-
+#date {
+  font-size: 13px;
+  margin: 3px 0px 5px 20px;
+}
 .fa-ellipsis-h {
   color: rgb(93, 105, 69);
   margin-top: 13px;
@@ -58,7 +61,8 @@
   background-color: gainsboro;
 }
 
-.fa-plus {
+.fa-plus,
+.fa-circle {
   margin: 15px;
 }
 h3 {
@@ -68,20 +72,29 @@ h3 {
 
 .todos {
   height: 50px;
-  border-bottom: solid 1px rgb(93, 105, 69);
+  border-bottom: solid 1px gainsboro;
   width: 98%;
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 
-.todos input {
+.todos form {
   width: 98%;
   height: 80%;
-  font-size: 15px;
+}
+.todos input {
+  width: 100%;
+  height: 100%;
   border: none;
 }
+
 button {
   background: none;
   cursor: pointer;
   border: none;
+}
+
+.todoEntered:hover {
+  background-color: gainsboro;
 }
