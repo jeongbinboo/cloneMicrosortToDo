@@ -40,25 +40,22 @@ function whenSubmitted(event) {
 }
 
 //first setting
-const rightBanner = document.querySelector("#popUpTodo");
 
 function setTodo() {
   for (let i = 0; i < todoArr.length; i++) {
     insertTodo(i, todoArr[i]);
   }
-  rightBanner.style.display = "none";
 }
 
 function insertTodo(num, text) {
   const todo = document.querySelector(`#todo${num}`);
-  todo.innerHTML = `<button><i class="far fa-circle"></i></button>${text}`;
+  todo.innerHTML = `<button><i class="far fa-circle"></i></button>${text}
+                    <div style="width:100%" align="right">
+                      <i class="fas fa-trash-alt" id ="trash${num}"></i>
+                    </div>`;
   todo.classList.add("todoEntered");
-  todo.addEventListener("click", popUp);
-}
-
-function popUp(event) {
-  rightBanner.style.display = "block";
-  rightBanner.innerText = event.target.innerText;
+  const trash = document.querySelector(`#trash${num}`);
+  trash.addEventListener("click", deleteTodo);
 }
 
 setTodo();
@@ -74,4 +71,21 @@ function setTime() {
   const date = now.getDate();
   const day = now.getDay();
   today.innerText = `${month}월 ${date}일, ${dayArr[day]}요일`;
+}
+
+//delete todo
+function deleteTodo(event) {
+  const delId = Number(event.target.id[5]);
+  console.log(delId);
+  for (let i = delId; i < todoArr.length; i++) {
+    if (i === todoArr.length - 1) {
+      const delTarget = document.querySelector(`#todo${i}`);
+      delTarget.innerText = "";
+      break;
+    }
+    todoArr[i] = todoArr[i + 1];
+    insertTodo(i, todoArr[i]);
+  }
+  todoArr.pop();
+  localStorage.setItem("todos", todoArr);
 }
